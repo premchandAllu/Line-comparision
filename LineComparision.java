@@ -25,16 +25,18 @@ public class LineComparision
 	   Double obj1 =new Double(length1);
 	   Double obj2 =new Double(length2);
 	   //Comparing
-	   boolean value= obj1.equals(obj2);
+	   int value= obj1.compareTo(obj2);
 	  
-	     if(value)
-	      { 
+	     if(value==0)
 		   System.out.println("Both lines are equal");
-	      }
+	
+	     else if(value<0)
+		   System.out.println("Line 1 is smaller than Line 2"); 
+	     
 	     else
-		   System.out.println("Both lines are not equal"); 
+	       System.out.println("Line 1 is bigger than Line 2");
 		  
-	  }
+	  } 
 	
 }	
 
